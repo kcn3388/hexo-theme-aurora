@@ -7,20 +7,20 @@ jobs:
     steps:
       - checkout
       - restore_cache:
-          # See the configuration reference documentation for more details on using restore_cache and save_cache steps
-          # https://circleci.com/docs/2.0/configuration-reference/?section=reference#save_cache
+          name: Restore Yarn Package Cache
           keys:
-            - node-deps-v1-{{ .Branch }}-{{checksum "package-lock.json"}}
+            - yarn-packages-{{ checksum "yarn.lock" }}
       - run:
-          name: install packages
-          command: npm ci
+          name: Install Dependencies
+          command: yarn install --immutable
       - save_cache:
-          key: node-deps-v1-{{ .Branch }}-{{checksum "package-lock.json"}}
+          name: Save Yarn Package Cache
+          key: yarn-packages-{{ checksum "yarn.lock" }}
           paths:
-            - ~/.npm
+            - ~/.cache/yarn
       - run:
           name: Run Tests
-          command: npm run test:unit
+          command: yarn unit:test
 
 workflows:
   orb-free-workflow:
