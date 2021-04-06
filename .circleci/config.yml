@@ -20,7 +20,7 @@ jobs:
             - ~/.cache/yarn
       - run:
           name: Run Tests
-          command: yarn unit:test
+          command: yarn test:unit
 
 workflows:
   orb-free-workflow:
