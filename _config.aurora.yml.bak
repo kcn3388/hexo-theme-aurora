@@ -1,0 +1,137 @@
+#! ---------------------------------------------------------------
+#! ObsidiaNext Theme for Hexo
+#! ---------------------------------------------------------------
+#! Designed & Coded By TriDiamond
+#! ---------------------------------------------------------------
+
+#! ---------------------------------------------------------------
+#! Site Configs
+#！ @docs https://obsidianext.tridiamond.tech/guide/configuration.html
+#! ---------------------------------------------------------------
+site:
+  subtitle: 幽梦的个人记录小站
+  author: 幽梦
+  nick: kcn3388
+  description: 随缘记录ovo
+  language: cn
+  multi_language: true
+  logo: https://img-blog.csdnimg.cn/20210313122054101.png
+  avatar: https://img-blog.csdnimg.cn/20210313122054101.png
+  beian:
+    number: '粤ICP备 2021022134号'
+    link: 'https://beian.miit.gov.cn/'
+
+#! ---------------------------------------------------------------
+#! Authors Configs
+#！ @docs https://obsidianext.tridiamond.tech/guide/authors.html
+#! ---------------------------------------------------------------
+authors:
+  KMurasaki: 
+    name: KMurasaki
+    avatar: /img/avatar/KMurasaki.jpg
+    link: https://bbs.nga.cn/nuke.php?func=ucp&uid=42953957
+
+#! ---------------------------------------------------------------
+#! Menu Configs
+#！ @docs https://obsidianext.tridiamond.tech/guide/menu.html
+#! ---------------------------------------------------------------
+menu:
+  About: true
+  Tags: true
+  Archives: true
+
+#! ---------------------------------------------------------------
+#! Theme Config
+#! @docs https://obsidianext.tridiamond.tech/guide/theme.html
+#! ---------------------------------------------------------------
+theme:
+  dark_mode: true
+  profile_shape: diamond # support `circle`, `diamond`, `rounded`
+  gradient:
+    color_1: '#24c6dc'
+    color_2: '#5433ff'
+    color_3: '#ff0099'
+
+#! ---------------------------------------------------------------
+#! Social Configs
+#! @docs https://obsidianext.tridiamond.tech/guide/social.html
+#! ---------------------------------------------------------------
+socials:
+  github: 'https://github.com/kcn3388'
+  twitter: ''
+  stackoverflow: ''
+  wechat: ''
+  qq: ''
+  weibo: 'https://weibo.com/u/3290162814'
+  zhifu: ''
+  csdn: ''
+  juejin: ''
+
+#! ---------------------------------------------------------------
+#! Site Meta Configs
+#! @docs https://obsidianext.tridiamond.tech/guide/theme.html
+#! ---------------------------------------------------------------
+site_meta:
+  cdn: cn
+  favicon:
+
+#! ---------------------------------------------------------------
+#! Plugins
+#! ---------------------------------------------------------------
+
+# For local development only!
+gitalk:
+  enable: true
+  autoExpand: true
+  clientID: '6d8662c2e315e96b4483'
+  clientSecret: '955eb71e0ac140a9501cdfa76b54c9759ec207a6'
+  repo: 'blog-comments'
+  owner: 'kcn3388'
+  admin: ['kcn3388']
+  # Ensure uniqueness and length less than 50
+  # If using 'pathname' ensure length is less than 50 characters
+  # or use 'uid' instead for better compatibility (If you use other theme before, this will lost your comments)
+  id: uid
+  # Facebook-like distraction
+  language: cn
+  distractionFreeMode: true
+  recentComment: true
+  proxy: 'https://gitalk.kcn3388.workers.dev/?https://github.com/login/oauth/access_token'
+
+# Valine comment plugin (recommended!)
+# see https://valine.js.org/quickstart.html
+valine:
+  enable: false
+  app_id:
+  app_key:
+  avatar: ''
+  placeholder: Leave your thoughts behind~
+  visitor: true
+  lang: en
+  meta: ['nick', 'mail']
+  admin: 'TriDiamond'
+  recentComment: true
+
+# Enable Busuanzi statistic plugin
+# see http://ibruce.info/2015/04/04/busuanzi/
+busuanzi:
+  enable: true
+
+copy_protection:
+  enable: true
+  author:
+    cn: 作者
+    en: Author
+  link:
+    cn: 本文来自于
+    en: Article is from
+  license:
+    cn: 博客内容遵循 署名-非商业性使用-相同方式共享 4.0 国际 (CC BY-NC-SA 4.0) 协议
+    en: This content is shared under the CC BY-NC-SA 4.0 protocol (Non-Commercial)
+
+#! ---------------------------------------------------------------
+#! Injections
+#! ---------------------------------------------------------------
+injects:
+  scripts:
+  css:
