@@ -11879,8 +11879,8 @@ vue3-click-away@^1.1.0:
 
 vue3-lazy@^1.0.0-alpha.1:
   version "1.0.0-alpha.1"
-  resolved "https://registry.npm.taobao.org/vue3-lazy/download/vue3-lazy-1.0.0-alpha.1.tgz#326a56c2ade4430c76b7ac90d33a7fde0af9aaa6"
-  integrity sha1-MmpWwq3kQwx2t6yQ0zp/3gr5qqY=
+  resolved "http://mirrors.cloud.tencent.com/npm/vue3-lazy/-/vue3-lazy-1.0.0-alpha.1.tgz#326a56c2ade4430c76b7ac90d33a7fde0af9aaa6"
+  integrity sha512-dpjpKK4DC5q+wZVtS/VY3X6pYBJHxRmYanr20s39RB6o6fvbneQ/DNuz37bipYfEdrEvbSZ95Y2SCexuznQNrQ==
 
 vue3-scroll-spy@^1.0.8:
   version "1.0.8"
