@@ -29,3 +29,10 @@ pnpm-debug.log*
 # Docs files
 .temp
 .cache
+
+# Useless local resource
+source/css
+source/font
+source/fonts
+source/img
+source/svg
