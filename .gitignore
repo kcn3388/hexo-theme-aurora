@@ -29,3 +29,9 @@ pnpm-debug.log*
 # Docs files
 .temp
 .cache
+
+source/css/*
+source/font/*
+source/fonts/*
+source/img/*
+source/svg/*
