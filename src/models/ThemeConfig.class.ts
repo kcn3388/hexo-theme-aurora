@@ -424,7 +424,7 @@ export class SiteMeta {
 
 type MetaAttributes = 'nick' | 'mail' | 'link'
 
-interface PluginsData {
+export interface PluginsData {
   gitalk: {
     enable: boolean
     autoExpand: boolean
@@ -452,10 +452,35 @@ interface PluginsData {
     admin: string
     recentComment: boolean
   }
+
+  twikoo: {
+    enable: boolean
+    envId: string
+    recentComment: boolean
+    region?: string
+    lang: string
+  }
+
+  waline: {
+    enable: boolean
+    recentComment: boolean
+    serverURL: string
+    reaction: boolean
+    login: string
+    meta: string[] | never[]
+    requiredMeta: string[] | never[]
+    imageUploader?: boolean
+    wordLimit: number | number[]
+    pageSize: number
+    commentSorting: string
+  }
+
   recent_comments: boolean
+
   busuanzi: {
     enable: boolean
   }
+
   copy_protection: {
     enable: boolean
     author: {
@@ -471,6 +496,7 @@ interface PluginsData {
       en: string
     }
   }
+
   aurora_bot: {
     enable: boolean
     locale: string
@@ -507,6 +533,26 @@ export class Plugins implements PluginsData {
     avatarForce: false,
     admin: '',
     recentComment: false
+  }
+  twikoo = {
+    enable: false,
+    envId: '',
+    region: undefined,
+    recentComment: false,
+    lang: ''
+  }
+  waline = {
+    enable: false,
+    recentComment: false,
+    serverURL: '',
+    reaction: false,
+    login: 'disable',
+    meta: [],
+    requiredMeta: [],
+    imageUploader: false,
+    wordLimit: 0,
+    pageSize: 10,
+    commentSorting: 'latest'
   }
   recent_comments = false
   busuanzi = {

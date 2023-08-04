@@ -1,3 +1,34 @@
+## [2.1.2](https://github.com/auroral-ui/hexo-theme-aurora/compare/v2.1.1...v2.1.2) (2023-08-04)
+
+
+### Bug Fixes
+
+* recent comment relative time use round to floor instead ([b5f4ae4](https://github.com/auroral-ui/hexo-theme-aurora/commit/b5f4ae4d4e651356d7e73ad3e03a44e69b0a832f))
+
+## [2.1.1](https://github.com/auroral-ui/hexo-theme-aurora/compare/v2.1.0...v2.1.1) (2023-08-02)
+
+
+### Bug Fixes
+
+* add missing waline options ([25f732f](https://github.com/auroral-ui/hexo-theme-aurora/commit/25f732f4040b3c428110985b3fa912ba09dfda12))
+
+# [2.1.0](https://github.com/auroral-ui/hexo-theme-aurora/compare/v2.0.1...v2.1.0) (2023-08-02)
+
+
+### Features
+
+* add empty display for recent comments ([c4dde9b](https://github.com/auroral-ui/hexo-theme-aurora/commit/c4dde9b8f67457987b9f6cbd0e6b14b48974da63))
+* add waline comment plugin ([6f34372](https://github.com/auroral-ui/hexo-theme-aurora/commit/6f34372b10ebf4b8d8b4399d4a58441fc1712f86))
+* **plugin:** add twikoo comment plugin support ([39ccaf8](https://github.com/auroral-ui/hexo-theme-aurora/commit/39ccaf83dae75fc3e504eae14edc1ca85ca258fe))
+
+## [2.0.1](https://github.com/auroral-ui/hexo-theme-aurora/compare/v2.0.0...v2.0.1) (2023-07-28)
+
+
+### Bug Fixes
+
+* beian image is still using require instead of import ([0174c3b](https://github.com/auroral-ui/hexo-theme-aurora/commit/0174c3b7640fe19531db22818f17c26b1fc821b4))
+* text overflowing outside of article content box [#218](https://github.com/auroral-ui/hexo-theme-aurora/issues/218) ([cf02393](https://github.com/auroral-ui/hexo-theme-aurora/commit/cf0239372f2b55fbcf252ac48f59c3e0ded2549a))
+
 # [2.0.0](https://github.com/auroral-ui/hexo-theme-aurora/compare/v1.5.5...v2.0.0) (2023-07-25)
 
 
